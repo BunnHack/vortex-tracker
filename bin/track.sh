@@ -1,20 +1,37 @@
 #!/usr/bin/env bash
 # Vortex Client Tracker — one-shot fetch → store → analyze → diff → commit.
 set -u
+# only run when executed, never when sourced (keeps cwd safe)
+if [ "${BASH_SOURCE[0]}" = "$0" ]; then
+  : # execute below
+else
+  echo "do not source me; run directly" >&2; return 0
+fi
 cd "$(dirname "$0")/.."
+mkdir -p reports snapshots
+[ -d .git ] || echo "warning: not a git repo (commit step will no-op)"
 BASE="https://playvortex.io"
 DL="$BASE/download/windows"
 CACHE="$HOME/.cache/vortex-tracker"
 mkdir -p "$CACHE"
 
 getver() {
-python3 - <<'PY' 2>/dev/null || echo ?
+python3 - <<'PY' 2>/dev/null || echo __SHA__
 import json,urllib.request
 try:
-    print(json.load(urllib.request.urlopen('https://playvortex.io/api/studio-version',timeout=20)).get('version','?'))
+    print(json.load(urllib.request.urlopen('https://playvortex.io/api/studio-version',timeout=20)).get('version','__SHA__'))
 except Exception:
-    print('?')
+    print('__SHA__')
 PY
+}
+
+# render a filename-safe version tag: probe value, else first 8 of extracted sha
+verfile() {
+  local v="$1"
+  if [ "$v" = "__SHA__" ]; then
+    v=$(python3 -c "import hashlib;print(hashlib.sha256(open('exe_current.bin','rb').read()).hexdigest()[:8])")
+  fi
+  echo "$v"
 }
 
 dl() {
@@ -42,9 +59,11 @@ else:
     sys.exit("no exe")
 PY
 echo "[4] analyzing"
-python3 bin/analyze.py < exe_current.bin > "reports/${VER}.json"
-cp "reports/${VER}.json" "snapshots/${VER}.json"
+python3 bin/analyze.py < exe_current.bin > "reports/latest.json"
+VERFILE=$(verfile "$VER")
+cp "reports/latest.json" "snapshots/${VERFILE}.json"
 echo "[5] diff"
-python3 bin/diff.py "reports/${VER}.json"
+python3 bin/diff.py "reports/latest.json"
 echo "[6] record provenance"
-echo "$(date -Is)  version=$VER  sha256=$(python3 -c "import json;print(json.load(open('reports/${VER}.json'))['sha256'])")" >> reports/history.log
+SHA=$(python3 -c "import json;print(json.load(open('reports/latest.json'))['sha256'])")
+echo "$(date -Is)  version=${VERFILE}  probe=${VER}  sha256=${SHA}" >> reports/history.log
