@@ -30,15 +30,16 @@ python3 bin/diff.py reports/<ver>.json       # diff vs last snapshot
 
 ## Automation
 
-Add to cron (daily) to keep the tracker green without touching anything by hand:
+A **GitHub Actions workflow** (`.github/workflows/track.yml`) runs the tracker
+for you:
 
-```
-# crontab — every 6h
-0 */6 * * *  cd /workspace/vortex-tracker && bin/track.sh >> reports/history.log 2>&1 && git add -A && (git diff --cached --quiet || git commit -m "tracker: $(date -Is)")
-```
+- **scheduled** every day 06:00 UTC
+- **manual** via the Actions → *vortex-tracker* → *Run workflow* button
 
-On a fresh clone, `git clone <repo>` + the cron line is the whole setup — the
-scripts download, unpack, and diff themselves.
+It fetches, unpacks, analyzes, diffs, and — if anything changed — commits the
+new snapshot and pushes it back to this repo. No cron, no local machine, no
+touching binaries by hand; the snapshot + `reports/history.log` accumulate as
+commits so the leak history is the git history.
 
 ## Layout
 
