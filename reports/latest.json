@@ -1,6 +1,6 @@
 {
-  "sha256": "0bd2fd6d34e28bdae17c0687386b005b481fd0e9ab8869cd024a7976ed7956a1",
-  "size": 165694976,
+  "sha256": "7691cae82275cc389968fba42f8c59faf1c88a3e446b3492e5b6d51febd5e05b",
+  "size": 170605056,
   "magic": "4d5a9000",
   "version_hints": [
     "0.0.0",
@@ -20,7 +20,7 @@
     "0.4.8",
     "0.41.1",
     "0.6.4",
-    "0.6.6",
+    "0.6.8",
     "0.7.0",
     "0.8.1",
     "001.000001.001001",
@@ -255,7 +255,7 @@
     "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_egui-0.41.1/src/render/render_pass.rs:24bevy_egui::render::render_passmessage",
     "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_egui-0.41.1/src/render/render_pass.rs:72",
     "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_egui-0.41.1/src/render/systems.rs",
-    "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_egui-0.41.1/src/render/systems.rs:371bevy_egui::render::systemsmessage",
+    "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_egui-0.41.1/src/render/systems.rs:371bevy_egui::render::systemsmessageQ",
     "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_egui-0.41.1/src/render/systems.rs:433",
     "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_gilrs-0.19.1/src/lib.rs",
     "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_gilrs-0.19.1/src/lib.rs:113bevy_gilrsmessage",
@@ -302,7 +302,7 @@
     "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_gltf-0.19.1/src/loader/mod.rs:842",
     "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_gltf-0.19.1/src/loader/mod.rs:850",
     "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_gltf-0.19.1/src/loader/mod.rs:862",
-    "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_gltf-0.19.1/src/loader/mod.rs:951bevy_gltf::loadermessageY",
+    "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_gltf-0.19.1/src/loader/mod.rs:951bevy_gltf::loadermessage",
     "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_image-0.19.1/src/image.rs",
     "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_image-0.19.1/src/image.rs:432",
     "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_image-0.19.1/src/image.rs:433",
@@ -489,33 +489,33 @@
   "tokens": [
     {
       "kw": "X-App-Token",
-      "off": "0x6bc0750",
+      "off": "0x6de4a23",
+      "ctx": "\u0544?........................\ufffd\ufffd.X-App-Token..\ufffd\ufffd.@....\ufffd\ufffd.?ids=\ufffd....ABCDEFGHIJKLMN"
+    },
+    {
+      "kw": "X-App-Token",
+      "off": "0x6e3f9f1",
       "ctx": "iled to flush. Error: \ufffd...\ufffd\ufffd\ufffd.X-App-Tokenare_friendsis_followingis_followedsen"
     },
     {
       "kw": "X-App-Token",
-      "off": "0x6c72185",
-      "ctx": ".........\uf007\uf3ed\uf0e3\uf03d\uf005\uf6e3\ufffd\ufffd.X-App-Token\ufffd..@....,\ufffd\ufffd.?ids=\ufffd....ABCDEFGHIJKLMNO"
-    },
-    {
-      "kw": "X-App-Token",
-      "off": "0x7832118",
-      "ctx": ".A.1.#...*\ufffd.\ufffd\ufffd\ufffd.\ufffd\ufffd..D\ufffd.d..DD..X-App-TokenX-Hardware-Idapp_tokenusernameuser_id"
+      "off": "0x7ce798e",
+      "ctx": "\ufffd\ufffd$\ufffd\ufffd\ufffd\ufffd\ufffd<\ufffdr\ufffdchat_text_edit\ufffd\ufffd\ufffd.X-App-TokenX-Hardware-Idapp_tokenusernameuser_id"
     },
     {
       "kw": "pp_token",
-      "off": "0x7832131",
-      "ctx": ".DD..X-App-TokenX-Hardware-Idapp_tokenusernameuser_idexpired\ufffd./api/queue/join?"
+      "off": "0x7ce79a7",
+      "ctx": "t\ufffd\ufffd\ufffd.X-App-TokenX-Hardware-Idapp_tokenusernameuser_idexpired\ufffd./api/queue/join?"
     },
     {
       "kw": "X-Hardware-Id",
-      "off": "0x7832123",
-      "ctx": ".\ufffd\ufffd\ufffd.\ufffd\ufffd..D\ufffd.d..DD..X-App-TokenX-Hardware-Idapp_tokenusernameuser_idexpired\ufffd./a"
+      "off": "0x7ce7999",
+      "ctx": "\ufffdchat_text_edit\ufffd\ufffd\ufffd.X-App-TokenX-Hardware-Idapp_tokenusernameuser_idexpired\ufffd./a"
     },
     {
       "kw": "app_token",
-      "off": "0x7832130",
-      "ctx": "..DD..X-App-TokenX-Hardware-Idapp_tokenusernameuser_idexpired\ufffd./api/queue/join"
+      "off": "0x7ce79a6",
+      "ctx": "it\ufffd\ufffd\ufffd.X-App-TokenX-Hardware-Idapp_tokenusernameuser_idexpired\ufffd./api/queue/join"
     }
   ],
   "struct_defs": [
@@ -575,6 +575,7 @@
     "struct PlayerState with 20 elements",
     "struct PointLightData with 3 elements",
     "struct Primitive with 7 elements",
+    "struct ProjectData with 4 elements",
     "struct ProjectDataV2 with 3 elements",
     "struct ProjectV1 with 4 elements",
     "struct ProjectV3 with 3 elements",
