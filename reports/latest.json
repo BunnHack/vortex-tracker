@@ -1,10 +1,11 @@
 {
-  "sha256": "810dd711426fb05d531fe5ffe11f8ec27d4ed59755237af5ae1617d7bdf97f76",
-  "size": 167712768,
+  "sha256": "4ab465df1fb04537b56af8d2151583de975ec34dbf7c1a7ec6dc58ab649dd225",
+  "size": 168233984,
   "magic": "4d5a9000",
   "version_hints": [
     "0.0.0",
     "0.01.0",
+    "0.1.21",
     "0.1.28",
     "0.1.44",
     "0.1.7",
@@ -20,7 +21,7 @@
     "0.4.8",
     "0.41.1",
     "0.7.0",
-    "0.7.1",
+    "0.7.2",
     "001.000001.001001",
     "1.3.6",
     "1.5.5",
@@ -44,9 +45,12 @@
     "9.9.9"
   ],
   "endpoints": [
+    "/api/clothing/image-urls?ids=",
     "/api/clothing/images?ids=",
+    "/api/meshes/urls?ids=",
     "/api/meshes?ids=",
     "/api/queue/join?game_id=",
+    "/api/queue/leave?game_id=",
     "/api/queue/status?game_id=",
     "/api/users/outfits?ids="
   ],
@@ -73,7 +77,6 @@
     "VORTEX_INSTANCE0",
     "VORTEX_NO_UPDATE",
     "WGPU3",
-    "WGPUB",
     "WGPUE",
     "WGPUPLCHH",
     "WGPUPLCHL",
@@ -100,7 +103,7 @@
     "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_anti_alias-0.19.1/src/contrast_adaptive_sharpening/mod.rsrobust_contrast_adaptive_sharpening.wgslembeddedcontrast_adaptive_sharpeningfullscreen_vertex_shader",
     "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_anti_alias-0.19.1/src/fxaa/mod.rsfxaa.wgslembedded",
     "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_anti_alias-0.19.1/src/smaa/mod.rssmaa.wgslembeddedSMAA",
-    "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_anti_alias-0.19.1/src/taa/mod.rs:153messageI",
+    "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_anti_alias-0.19.1/src/taa/mod.rs:153message",
     "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_anti_alias-0.19.1/src/taa/mod.rstaa.wgslembeddedtaa_pipelinefullscreen_vertex_shader",
     "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_asset-0.19.1/src/asset_changed.rs",
     "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_asset-0.19.1/src/asset_changed.rs:180bevy_asset::asset_changedmessage",
@@ -305,7 +308,7 @@
     "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_gltf-0.19.1/src/loader/mod.rs:842",
     "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_gltf-0.19.1/src/loader/mod.rs:850",
     "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_gltf-0.19.1/src/loader/mod.rs:862",
-    "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_gltf-0.19.1/src/loader/mod.rs:951bevy_gltf::loadermessageI",
+    "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_gltf-0.19.1/src/loader/mod.rs:951bevy_gltf::loadermessage",
     "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_image-0.19.1/src/image.rs",
     "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_image-0.19.1/src/image.rs:432",
     "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_image-0.19.1/src/image.rs:433",
@@ -452,7 +455,7 @@
     "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_pbr-0.19.1/src/wireframe.rs:632",
     "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_pbr-0.19.1/src/wireframe.rs:639",
     "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_pbr-0.19.1/src/wireframe.rs:833",
-    "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_pbr-0.19.1/src/wireframe.rsrender/wireframe.wgslwireframe_wide_bind_groupskin",
+    "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_pbr-0.19.1/src/wireframe.rsrender/wireframe.wgslwireframe_wide_bind_group",
     "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_picking-0.19.1/src/events.rs",
     "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_picking-0.19.1/src/events.rs:709bevy_picking::eventsmessage",
     "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_picking-0.19.1/src/events.rs:804",
@@ -493,32 +496,32 @@
   "tokens": [
     {
       "kw": "X-App-Token",
-      "off": "0x6bc4db7",
-      "ctx": "etailSomething went wrong.\ufffd\ufffd\ufffd.X-App-Tokenare_friendsis_followingis_followedsen"
+      "off": "0x6c23724",
+      "ctx": "tailSomething went wrong.,\ufffd\ufffd\ufffd.X-App-Tokenare_friendsis_followingis_followedsen"
     },
     {
       "kw": "X-App-Token",
-      "off": "0x6c77ec3",
-      "ctx": "\u0544?........................\ufffd\ufffd.X-App-Token...B.@....,\ufffd\ufffd.?ids=\ufffd....ABCDEFGHIJKLM"
+      "off": "0x6cd5bfb",
+      "ctx": "\u0544?........................\ufffd\ufffd.X-App-Token..\ufffd\ufffd.@....\ufffdPNG........IHDR...\ufffd...\ufffd..."
     },
     {
       "kw": "X-App-Token",
-      "off": "0x7df4f30",
+      "off": "0x7e63080",
       "ctx": ".A.1.#...*\ufffd.\ufffd\ufffd\ufffd.\ufffd\ufffd..D\ufffd.d..DD..X-App-TokenX-Hardware-Idapp_tokenusernameuser_id"
     },
     {
       "kw": "pp_token",
-      "off": "0x7df4f49",
+      "off": "0x7e63099",
       "ctx": ".DD..X-App-TokenX-Hardware-Idapp_tokenusernameuser_idexpired\ufffd./api/queue/join?"
     },
     {
       "kw": "X-Hardware-Id",
-      "off": "0x7df4f3b",
+      "off": "0x7e6308b",
       "ctx": ".\ufffd\ufffd\ufffd.\ufffd\ufffd..D\ufffd.d..DD..X-App-TokenX-Hardware-Idapp_tokenusernameuser_idexpired\ufffd./a"
     },
     {
       "kw": "app_token",
-      "off": "0x7df4f48",
+      "off": "0x7e63098",
       "ctx": "..DD..X-App-TokenX-Hardware-Idapp_tokenusernameuser_idexpired\ufffd./api/queue/join"
     }
   ],
