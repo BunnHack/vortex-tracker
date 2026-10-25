@@ -1,6 +1,6 @@
 {
-  "sha256": "7d4b80d2086fffffdf258fbf070cd5c4913aff23af44b57d4f0882aa7f0c8c62",
-  "size": 194808320,
+  "sha256": "77d0253ad2433bd72e20f2d179bdc78241ce7fef2d9d37fd4b7a48218ca3718b",
+  "size": 194825216,
   "magic": "4d5a9000",
   "version_hints": [
     "0.0.0",
@@ -21,7 +21,7 @@
     "0.4.8",
     "0.41.1",
     "0.7.0",
-    "0.8.1",
+    "0.8.2",
     "001.000001.001001",
     "1.1.1",
     "1.3.6",
@@ -322,7 +322,7 @@
     "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_gltf-0.19.1/src/loader/mod.rs:842",
     "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_gltf-0.19.1/src/loader/mod.rs:850",
     "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_gltf-0.19.1/src/loader/mod.rs:862",
-    "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_gltf-0.19.1/src/loader/mod.rs:951bevy_gltf::loadermessage9",
+    "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_gltf-0.19.1/src/loader/mod.rs:951bevy_gltf::loadermessage",
     "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_image-0.19.1/src/image.rs",
     "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_image-0.19.1/src/image.rs:432",
     "/build/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/bevy_image-0.19.1/src/image.rs:433",
@@ -510,32 +510,32 @@
   "tokens": [
     {
       "kw": "X-App-Token",
-      "off": "0x7e71e83",
-      "ctx": "\u0544?........................\ufffd\ufffd.X-App-Token..0\ufffd.@....\ufffdPNG........IHDR...\ufffd...\ufffd..."
+      "off": "0x7e1c42b",
+      "ctx": "\u0544?........................\ufffd\ufffd.X-App-Token..\ufffd..@....called `Result::unwrap()` o"
     },
     {
       "kw": "X-App-Token",
-      "off": "0x7ec4c44",
-      "ctx": "iled to flush. Error: \ufffd...\ufffd\ufffd\ufffd.X-App-Tokenare_friendsis_followingis_followedsen"
+      "off": "0x7e6ff9d",
+      "ctx": "led to flush. Error: \ufffd...,\ufffd\ufffd\ufffd.X-App-Tokenare_friendsis_followingis_followedsen"
     },
     {
       "kw": "X-App-Token",
-      "off": "0x8e71120",
+      "off": "0x8e73ec0",
       "ctx": ".A.1.#...*\ufffd.\ufffd\ufffd\ufffd.\ufffd\ufffd..D\ufffd.d..DD..X-App-TokenX-Hardware-Idapp_tokenusernameuser_id"
     },
     {
       "kw": "pp_token",
-      "off": "0x8e71139",
+      "off": "0x8e73ed9",
       "ctx": ".DD..X-App-TokenX-Hardware-Idapp_tokenusernameuser_idexpired\ufffd./api/queue/join?"
     },
     {
       "kw": "X-Hardware-Id",
-      "off": "0x8e7112b",
+      "off": "0x8e73ecb",
       "ctx": ".\ufffd\ufffd\ufffd.\ufffd\ufffd..D\ufffd.d..DD..X-App-TokenX-Hardware-Idapp_tokenusernameuser_idexpired\ufffd./a"
     },
     {
       "kw": "app_token",
-      "off": "0x8e71138",
+      "off": "0x8e73ed8",
       "ctx": "..DD..X-App-TokenX-Hardware-Idapp_tokenusernameuser_idexpired\ufffd./api/queue/join"
     }
   ],
